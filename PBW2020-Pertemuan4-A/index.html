@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--<!DOCTYPE html> adalah deklarasi yang berfungsi untuk memberikan informasi kepada web browser tentang versi dokumen HTML yang bersangkutan.-->
+<html>
+ <!--tag html merupakan tag yang digunakan untuk membuat sebuah dokumen HTML -->
+    <head>
+         <!--tag head berguna untuk informasi meta tentang dokumen-->
+         <link rel="shortcut icon" href="img/image3.png">
+         <!--tag link ini berguna untuk membuat favicon-->
+        <title>Tugas Tabel</title>
+        <!--tag title berguna untuk membuat judul halaman yang nantinya akan ditampilkan di browser-->
+    </head>
+    <body>
+     <!--tag body berguna untuk tempat dibuatnya semua konten yang akan terkandung dalam website-->
+        <center>
+        <!--tag center berfungsi agar elemen yang ada pada tag ini ditampilkan ditengah tengah halaman web-->
+        <h1>DAFTAR HADIR</h1>
+         <!--tag h1 merupakan tag heading untuk membuat judul-->
+        <p>PRAKTIKUM PEMROGRAMAN BERBASIS WEB</p>
+         <!--tag p merupakan tag yang berguna jika kita membuat suatu paragraf-->
+        </center>
+        <hr>
+        <!--<hr> tag ini digunakan untuk memisahkan konten atau paragraf satu dengan lainnya berdasarkan pengelompokkan yang ditandai dengan garis horizontal-->
+        <br>
+        <!--tag br berguna untuk membuat baris baru pada suatu paragraf-->
+        <table border="1" width=100%>
+        <!--membuat tabel pertama dengan lebar 100% yang akan memenuhi halaman web secara horizontal-->
+            <tr bgcolor="#9ADEBB">
+                <!--tag tr atau table row, digunakan untuk mendefiniskan baris yang diwarnai pada tabel dengan perintah bgcolor-->
+                <th rowspan="2">No</th>
+                <!--tag th atau table heading digunakan untuk membuat judul sebuah table ditandai dengan tulisan Bold
+                ,pada kolom pertama dengan judul No akan menggabungkan baris 1 dan 2 dengan perintah rowspan-->
+                <th rowspan="2">Nama</th>
+                <!--pada kolom kedua dengan judul Nama akan menggabungkan baris 1 dan 2 dengan perintah rowspan-->
+                <th colspan="5">Pertemuan</th>
+                <!--pada kolom selanjutnya dengan judul Pertemuan merupakan gabungan dari 5 kolom dengan perintah colspan-->
+            </tr>
+            <tr align="center" bgcolor="#9ADEBB">
+                <!--mendefinisikan baris baru, dimana setiap elemen dalam tabel dicetak rata tengah-->
+                <td>1</td>
+                <!--tag td atau table data, digunakan untuk membuat isi dari suatu baris baris-->
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr align="center">
+            <!--baris ketiga-->
+                <td>001</td>
+                <td>Safira</td>
+                <td><img src="img/image1.jpeg" width="40px" height="20px" alt="gambar ttd"></td>
+                <!--menyisipkan gambar di dalam tabel dengan tag img yang lebar dan tingginya dapat diatur dengan width dan height
+                , alt berguna untuk mendefinisikan gambar melalui pesan ketika gambar tidak berhasil ditampilkan -->
+                <td>❌</td>
+                <!--menyisipkan icon di dalam sel pada tabel-->
+                <td>❌</td>
+                <td><img src="img/image1.jpeg" width="40px" height="20px" alt="gambar ttd"></td>
+                <td><img src="img/image1.jpeg" width="40px" height="20px" alt="gambar ttd"></td>
+            </tr>
+            <tr align="center">
+            <!--baris keempat-->
+                <td>002</td>
+                <td>Ni Putu Ambalika Dewi</td>
+                <td><img src="img/image1.jpeg" width="40px" height="20px" alt="gambar ttd"></td>
+                <td><img src="img/image1.jpeg" width="40px" height="20px" alt="gambar ttd"></td>
+                <td><img src="img/image1.jpeg" width="40px" height="20px" alt="gambar ttd"></td>
+                <td>❌</td>
+                <td>❌</td>
+            </tr>
+            <tr align="center">
+            <!--baris kelima-->
+                <td>003</td>
+                <td>Ni Kadek Nadya Oktaviana</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+            </tr>
+            <tr align="center">
+            <!--baris keenam-->
+                <td>004</td>
+                <td>Gusti Ayu Vidjaretha Wardana</td>
+                <td><img src="img/image1.jpeg" width="40px" height="20px" alt="gambar ttd"></td>
+                <td><img src="img/image1.jpeg" width="40px" height="20px" alt="gambar ttd"></td>
+                <td><img src="img/image1.jpeg" width="40px" height="20px" alt="gambar ttd"></td>
+                <td><img src="img/image1.jpeg" width="40px" height="20px" alt="gambar ttd"></td>
+                <td><img src="img/image1.jpeg" width="40px" height="20px" alt="gambar ttd"></td>
+            </tr>
+            <tr align="center">
+            <!--baris ketujuh-->
+                <td>005</td>
+                <td>Luh Putu Eka Nadya Wati</td>
+                <td><img src="img/image1.jpeg" width="40px" height="20px" alt="gambar ttd"></td>
+                <td>❌</td>
+                <td>❌</td>
+                <td><img src="img/image1.jpeg" width="40px" height="20px" alt="gambar ttd"></td>
+                <td><img src="img/image1.jpeg" width="40px" height="20px" alt="gambar ttd"></td>
+            </tr>
+        </table>
+        <br>
+        <table border="1">
+            <!--membuat tabel baru untuk keterangan-->
+            <tr>
+            <!--baris pertama untuk menampilkan judul tabel-->
+                <th colspan="2" bgcolor="#9ADEBB">KETERANGAN</th>
+            </tr>
+            <tr>
+                <!--baris kedua-->
+                <td><img src="img/image1.jpeg" width="40px" height="20px" alt="gambar ttd"></td>
+                <td>Hadir</td>
+            </tr>
+            <tr>
+                <!--baris ketiga-->
+                <td align="center">❌</td>
+                <td>Tidak Hadir</td>
+            </tr>
+        </table>
+    </body>
+</html>
