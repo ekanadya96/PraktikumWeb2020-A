@@ -1,0 +1,143 @@
+.container{
+    /*mengatur bagian kelas container yang berguna untuk menampilkan background pada header*/
+    background-image: url('img/gambar1.jpg');
+    background-size: 100%;
+    height: 200px;
+
+}
+.text h1{
+    /*mengatur bagian kelas text bagian h1 yang berguna untuk mengatur tag heading pada header*/
+    position: absolute;
+    font-size: 45px;
+    padding-top: 30px;
+    left: 180px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.text p{
+    /*mengatur bagian kelas text bagian tag paragraph pada header*/
+    position: absolute;
+    font-size: 20px;
+    top: 110px;
+    left: 180px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+.form .type{
+    /*mengatur bagian kelas form pada formulir dan
+    bagian input yang memiliki kelas type. Ini berguna untuk 
+    menampilkan kolom input yang ukurannya paling panjang
+    yaitu input alamat*/
+    width: 97.15%;
+    padding-left: 7px;
+}
+.form .type-1{
+    /*mengatur bagian kelas form pada formulir dan
+    bagian input yang memiliki kelas type-1. Ini berguna untuk 
+    mengatur ukuran kolom input, 
+    yaitu input nama lengkap, nama panggilan,no.telp serta email*/
+    width: 48%;
+    padding-left: 7px;
+}
+.form .type-2{
+    /*mengatur bagian kelas form pada formulir dan
+    bagian input yang memiliki kelas type-2. Ini berguna untuk 
+    mengatur ukuran kolom input, 
+    yaitu input tgl lahir, tempat lahir, agama serta 
+    baris untuk universitas, jurusan dan jabatan*/
+    width: 31.82%;
+    padding-left: 7px;
+}
+#aa{
+    width: 30.75%;
+  
+}
+
+.form {
+    /*mengatur bagian kelas form pada formulir*/
+	margin:10px 120px 10px 120px;
+    font-size: 20px;
+}
+.form li {
+    /*mengatur bagian kelas form pada tag li formulir*/
+	display: block;
+    margin: 7px;
+}
+input{
+    /*mengatur bagian tag input pada formulir
+    yang akan mengatur bagian pading, sudut setiap sisi tag input, border, dan tingginya*/
+    padding: 5px 2px;
+    border-radius: 4px;
+    height: 20px;
+    border: 1px solid grey; 
+    outline: none;
+    
+}
+select{
+    /*mengatur bagian tag select pada formulir yaitu pada input agama*/
+    border: 1px solid grey;
+    border-radius: 4px;
+    color: #555555;
+    outline: none;	
+    padding: 8px;
+    margin: 0px;
+    
+}
+input[type=submit] {
+    /*mengatur bagian tag input dengan type submit yaitu tombol daftar pada halaman*/
+    width: 90px;
+    height: 43px;
+    font-size: medium;
+    padding: 14px 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #006400;
+    color: white;
+}
+.tombol{
+    /*mengatur tata letak tombol daftar pada halaman*/
+    padding-top: 6px;
+}
+.form label{
+    /*mengatur bagian kelas form untuk tag label
+    yang akan menampilkan kata "Foto almamater" dan "Scan KTP" pada halaman*/
+	margin: 0 0 5px 0;
+	padding: 0px;
+	display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+#atur{
+    /*mengatur untuk tag yang memiliki id atur
+    yang akan menampilkan tampilan untuk upload file pada halaman*/
+    border-style: none;
+    margin-top: 0px;
+}
+.upload{
+    /*mengatur untuk class upload
+    agar tampilan untuk upload foto almamater dan scan ktp berdampingan*/
+    display: grid;
+    grid-template-columns: 578px 578px;
+    padding: 0px;
+}
+input:focus, select:focus{ 
+    /*mengatur effect untuk tags input serta select ketika user menekan elemen yang ingin dipilih*/       
+    border-color: #2E8B57;
+    box-shadow: 0px 0px 5px #2E8B57	;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+}
+input[type=submit]:hover{
+    /*berguna untuk memberikan effect ketika user mengarahkan 
+    kursor ke arah tombol daftar.*/
+    opacity:0.7;
+}
+input:hover, select:hover{
+    /*berguna untuk memberikan effect ketika user mengarahkan 
+    kursor ke arah tombol daftar.*/
+    box-shadow: 0px 0px 5px #2E8B57	;
+}
+.upload input:hover{
+    /*menghilangkan effect hover pada kelas upload bagian input file*/
+    box-shadow: none;
+}

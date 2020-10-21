@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Mmemberikan informasi pages dimata SEO -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tugas 5</title>
+        <!--penyisipan style css secara ekternal-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--membuat div untuk mengelompokkan tag-tag agar menjadi suatu grup-->
+        <!--bagian header halaman-->
+        <div class="container">
+            <div class="text">
+                <h1>Halaman Pendaftaran</h1>
+                <p>Pendaftaran sebagai peserta dalam RAKERWIL (Rapat Kerja Wilayah) Bali dan Nusa Tenggara 2020</p>
+            </div>
+        </div>
+        <!--bagian akhir header halaman-->
+
+        <!--membuat form-->
+           <form action="index.html" method="POST">
+               <!--membuat list input untuk form pendaftaran dengan kelas form-->
+               <ul class="form">
+                <li>
+                    <!--tag tag input yang akan berada pada satu baris-->
+                    <input type="text" name="nama" placeholder="Nama Lengkap" class="type-1" />
+                    <input type="text" name="nama" placeholder="Nama Panggilan" class="type-1" />
+                </li>
+                <li>
+                    <!--tag tag input yang akan berada pada satu baris-->
+                    <input type="text" name="telepon" placeholder="No.Telepon" class="type-1" />
+                    <input type="email" name="email" placeholder="Email" class="type-1" />
+                </li>
+                <li>
+                    <!--tag tag input yang akan berada pada satu baris-->
+                    <input type="datetime" name="nama" placeholder="Tanggal Lahir" class="type-2" />
+                    <input type="text" name="nama" placeholder="Tempat Lahir" class="type-2" />
+                    <select name="agama" class="type-2">
+                        <!--membuat beberapa opsi agama-->
+                        <option value="Agama" id="option">Agama</option>
+                        <option value="Islam" id="option">Islam</option>
+                        <option value="Hindu" id="option">Hindu</option>
+                        <option value="Buddha" id="option">Buddha</option>
+                        <option value="Kristen Katolik" id="option">Kristen Katolik</option>
+                        <option value="Kristen Protestan" id="option">Kristen Protestan</option>
+                        <option value="Konghucu" id="option">Konghucu</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="text" name="nama" placeholder="Universitas" class="type-2" />
+                    <input type="text" name="nama" placeholder="Fakultas/Jurusan" class="type-2"/>
+                    <input type="text" name="nama" placeholder="Jabatan" class="type-2" id="aa"/>
+                </li>
+                <li>
+                    <input type="text" name="nama" placeholder="Alamat Asal" class="type" />  
+                </li>
+                
+                <!--membuat div untuk bagian upload file-->
+                <div class="upload">
+                    <div class="space">
+                    <label>Foto Almamater</label>
+                    <input type="file" name="foto-almamater" id="atur">
+                    </div>
+                    <div class="space">
+                    <label>Scan KTP</label>
+                    <input type="file" name="scan-ktp" id="atur">
+                    </div>
+                </div>
+                <!--akhir bagian upload file-->
+                <li class="tombol">
+                    <!--menampilkan tombol daftar-->
+                    <input type="submit" value="Daftar">
+                </li>
+        </ul>
+        <!--akhir dari list-->
+        </form>
+        <!--bagian penutup form--> 
+    </body>
+</html>
