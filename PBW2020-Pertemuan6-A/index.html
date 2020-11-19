@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--title pada tab bar-->
+    <title>Tugas Praktikum PBW</title>
+  </head>
+  <body>
+    <center>
+    <div class="container" style="padding-top: 170px;">
+        <div class="card border-primary mb-3 " style="width: 30rem;">
+          <!--memunculkan nama program-->
+            <div class="card-header text-primary"> <h5>KALKULATOR SEDERHANA</h5></div>
+        <!--memberikan nama form1 untuk mempermudahkan pengaplikasian javascript dengan DOM
+        DOM adalah sebuah objek untuk memodelkan dokumen HTML.-->
+        <form name ="form1" action="">
+        <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <td>
+                    <div class="input-group mb-1">
+                        <div class="input-group-prepend">
+                          <!--membuat kolom untuk input angka-->
+                          <span class="input-group-text" id="inputGroup-sizing-default">Angka 1</span>
+                        </div>
+                        <input type="number" name="angka_pertama" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Masukkkan angka 1">
+                    </div>
+                </td>
+                <!--menggunakan method javascript onClick dengan value sesuai operasi matematika-->
+                <td><button type="button" class="btn btn-primary" onClick="tambah()" value="  +  " style="width: 60px;">+</button></td>
+                <td><button type="button" class="btn btn-primary" onClick="kurang()" value="  -  " style="width: 60px;">-</button></td>
+              </tr>
+              <tr>
+                <td>
+                    <div class="input-group mb-1">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Angka 2</span>
+                        </div>
+                        <input type="number" name="angka_kedua" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Masukkkan angka 2">
+                    </div>
+                </td>
+                <!--menggunakan method javascript onClick dengan value sesuai operasi matematika-->
+                <td><button type="button" class="btn btn-primary" onClick="kali()" value="  *  " style="width: 60px;">*</button></td>
+                <td><button type="button" class="btn btn-primary" onClick="bagi()" value="  /  " style="width: 60px;">/</button></td>
+              </tr>
+              <tr>   
+                <td>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Hasil</span>
+                        </div>
+                        <input type="number" name="hasil" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </td>
+                <!--membuat tombol reset agar jika ditekan angka yg diinput user sebelumnya otomatis terhapus dengan method onClick="resetForm()-->
+                <td><button type="button" class="btn btn-danger" onClick="resetForm()">Reset</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+    </div>
+</div>
+</center>
+<!--berikut merupakan script javacript-->>
+<script type="text/javascript">
+//membuat function untuk setiap operasi matematika, menggukanan
+//variabel angka_pertama dan angka_kedua sesuai dengn inputan user dan 
+//variabel hasil untuk menampilkan hasil dari operasi matematika tersebut
+    function tambah(){
+      //fungsi parseFloat akan mengubah bilangan non-float menjadi float
+     var angka_pertama=parseFloat(document.form1.angka_pertama.value);
+     var angka_kedua=parseFloat(document.form1.angka_kedua.value);
+     var hasil= angka_pertama + angka_kedua;
+     document.form1.hasil.value=hasil;
+    }
+    function kurang(){
+     var angka_pertama=parseFloat(document.form1.angka_pertama.value);
+     var angka_kedua=parseFloat(document.form1.angka_kedua.value);
+     var hasil= angka_pertama - angka_kedua;
+     document.form1.hasil.value=hasil;
+    }
+    function kali(){
+     var angka_pertama=parseFloat(document.form1.angka_pertama.value);
+     var angka_kedua=parseFloat(document.form1.angka_kedua.value);
+     var hasil= angka_pertama * angka_kedua;
+     document.form1.hasil.value=hasil;
+    }
+    function bagi(){
+     var angka_pertama=parseFloat(document.form1.angka_pertama.value);
+     var angka_kedua=parseFloat(document.form1.angka_kedua.value);
+     var hasil= angka_pertama / angka_kedua;
+     document.form1.hasil.value=hasil;
+    }
+    //fungsi untuk melakukan reset
+    function resetForm(){
+    document.form1.reset();
+    }
+    </script>
+  </body>
+</html>
